@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Prosta mashq</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center">Son kiriting va ulardan kichigini tanlab beraman</h1>
+        <form class="form-group text-center js-form" autocomplete="off" action="https://echo.htmlacademy.ru" method="POST">
+          <label class="col-form-label" for="number-1">Son kiriting</label>
+          <input class="js-input-1" type="number" name="number" id="number-1">
+
+          <label class="col-form-label" for="number-2">Son kiriting</label>
+          <input class="js-input-2" type="number" name="number" id="number-2">
+
+          <label class="col-form-label" for="number-3">Son kiriting</label>
+          <input class="js-input-3" type="number" name="number" id="number-3">
+
+          <button class="btn btn-dark" type="submit">hisobla</button>
+          <output class="d-flex flex-column text-center js-result"></output>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <hr class="text-danger border">
+
+  <div class="container">
+    <div class="row">
+      <h2 class="h1 text-center">Son kiriting va kiritilgan son dekabr oyining qaysi kuniga to'g'ri kelishini aytib beraman</h2>
+      <div class="col-12 text-center">
+        <form class="form-group d-flex flex-column js-oy-form" action="https://echo.htmlacademy.ru" method="POST">
+          <input class="mb-5 w-25 text-center d-flex align-self-center js-oy-input" type="number" name="number" required>
+          <button class="btn btn-dark w-25 mb-5 d-flex justify-content-center align-self-center text-center">tanla</button>
+
+          <output class="text-center text-danger h4 js-oy-result"></output>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
