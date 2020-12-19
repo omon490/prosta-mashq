@@ -49,7 +49,10 @@ elFormOy.addEventListener(`submit`, function(evt) {
   var kiritilganSon = Number(elInputOy.value);
 
   // Agar kiritilayotgan sondan 1ni ayirib 7 ga bo'lganda qoldiq qolmasa oyning boshlang'ich xafta kuni natijaga chiqsin (masalan oy seshanbadan boshlansa seshanba), qoldiq 1 qolsa keyingi kunga to'g'ri kelsin yani chorshanba va shu tarzda davom etadi
-   if ((kiritilganSon-1) % 7 === 0) {
+    if (kiritilganSon > 31) {
+      elResultOy.textContent = `Bunaqa sana yo'qku:)`;
+      return;
+    } else if ((kiritilganSon-1) % 7 === 0) {
     elResultOy.textContent = `Dekabrning ${kiritilganSon} sanasi Seshanba ekan`;
    } else if ((kiritilganSon-1) % 7 === 1) {
      elResultOy.textContent = `Dekabrning ${kiritilganSon} sanasi Chorshanba ekan`;
