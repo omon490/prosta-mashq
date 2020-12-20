@@ -68,3 +68,45 @@ elFormOy.addEventListener(`submit`, function(evt) {
      elResultOy.textContent = `Dekabrning ${kiritilganSon} sanasi Dushanba ekan`;
    }
 });
+
+// DOM ga oid elementlarni e'lon qilib olamiz
+var elFormFasl = document.querySelector(`.js-fasl-form`);
+if (elFormFasl) {
+  var elInputFasl = document.querySelector(`.js-fasl-input`);
+  var elResultFasl = document.querySelector(`.js-fasl-result`);
+}
+
+elFormFasl.addEventListener(`submit`, function(evt) {
+  evt.preventDefault();
+
+  var kiritilganOy = elInputFasl.value;
+
+  if (kiritilganOy === `Yanvar`) {
+    elResultFasl.textContent = `Winter`;
+  } else if (kiritilganOy === `Fevral`) {
+    elResultFasl.textContent = `Winter`;
+  } else if (kiritilganOy === `Mart`) {
+    elResultFasl.textContent = `Spring`;
+  } else if (kiritilganOy === `Aprel`) {
+    elResultFasl.textContent = `Spring`;
+  } else if (kiritilganOy === `May`) {
+    elResultFasl.textContent = `Spring`;
+  } else if (kiritilganOy === `Iyun`) {
+    elResultFasl.textContent = `Summer`;
+  } else if (kiritilganOy === `Iyul`) {
+    elResultFasl.textContent = `Summer`;
+  } else if (kiritilganOy === `Avgust`) {
+    elResultFasl.textContent = `Summer`;
+  } else if (kiritilganOy === `Sentabr`) {
+    elResultFasl.textContent = `Autumn`;
+  } else if (kiritilganOy === `Oktabr`) {
+    elResultFasl.textContent = `Autumn`;
+  } else if (kiritilganOy === `Noyabr`) {
+    elResultFasl.textContent = `Autumn`;
+  } else if (kiritilganOy === `Dekabr`) {
+    elResultFasl.textContent = `Winter`;
+  }
+});
+
+// agar user yanvar deb kiritsa natija winter chiqsin
+// agar user mart deb kiritsa natija spring chiqsin
